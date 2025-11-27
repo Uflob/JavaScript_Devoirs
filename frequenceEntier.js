@@ -1,23 +1,22 @@
 
-function frequenceWhile(tableau,entier) {
+function frequenceWhile(tableau,entier){
     let compteur = 0;
     let index = 0;
-    while (index < tableau.length) 
-    {
+    while (index < tableau.length) {
         if (entier === tableau[index]){
             compteur++
         }
         index++;
         }
     return compteur;
-    }
+}
 
 
 function frequenceDo(tableau,entier) {
     let compteur = 0;
     let index = 0;
     do {
-        if (entier === tableau[index]) {
+        if(entier === tableau[index]) {
             compteur++
         }
         index++
@@ -39,8 +38,8 @@ function frequenceFor(tableau,entier) {
 
 function frequenceForIn(tableau,entier) {
     let compteur = 0;
-    for (index in tableau){
-        if (entier === tableau[index]){
+    for (let index in tableau){
+        if(entier === tableau[index]){
         compteur++
         }
     }
@@ -50,14 +49,14 @@ function frequenceForIn(tableau,entier) {
 
 function frequenceForOf(tableau,entier) {
     let compteur = 0
-    for (element of tableau)
-    {
-        if (entier === element){
+    for (let element of tableau){
+        if(entier === element){
         compteur++
         }
     }
     return compteur;
 }
+
 
 {
     console.log(frequenceWhile([1, 2, 3, 2, 2], 2));
@@ -65,8 +64,6 @@ function frequenceForOf(tableau,entier) {
     console.log(frequenceFor([1, 3, 3, 3, 3], 3));
     console.log(frequenceForIn(['a','b','c'], 'b'));
     console.log(frequenceForOf(['a','z','b','z','c'], 'z'));
-
-
 }
 
 
